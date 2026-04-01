@@ -382,17 +382,37 @@ input[class^='btn-']:hover {
     padding: 0.8rem;
 }
 
-#about-a .about-info .award-1,
-#about-a .about-info .award-2,
-#about-a .about-info .award-3 {
-    grid-area: aw1; 
+/* Assign each award to its own grid area to prevent stacking */
+#about-a .about-info .award-1 {
+    grid-area: aw1;
 }
 
+#about-a .about-info .award-2 {
+    grid-area: aw2;
+}
+
+#about-a .about-info .award-3 {
+    grid-area: aw3;
+}
+
+/* Style the icons using your main yellow accent color */
 #about-a .about-info .award-1 .fas,
 #about-a .about-info .award-2 .fas,
 #about-a .about-info .award-3 .fas {
-    color: var(--main-color); 
+    color: #ffbc00; /* Your signature yellow accent */
     margin: 1rem;
+    display: block; /* Ensures the icon sits above the text */
+}
+
+/* Add a hover effect to make the cards feel interactive */
+#about-a .about-info [class^="award-"] {
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 1rem;
+}
+
+#about-a .about-info [class^="award-"]:hover {
+    transform: translateY(-5px);
 }
 
 #about-b .container {
