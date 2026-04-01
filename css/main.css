@@ -468,7 +468,7 @@ input[class^='btn-']:hover {
 }
 
 .cert-card i {
-  color: #ffbc00;
+  color: #CD5C5C;
   margin-bottom: 10px;
 }
 
@@ -498,7 +498,7 @@ input[class^='btn-']:hover {
 }
 
 .timeline-item i, .pub-card i {
-  color: #ffbc00;
+  color: #CD5C5C;
   margin-right: 10px;
 }
 
